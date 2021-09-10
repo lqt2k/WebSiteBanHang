@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="TrangChu.master.cs" Inherits="TrangChu" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="CSS/TrangChu.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="top" style="padding-top: -20px; margin-bottom: -55px;">
+            <ul>
+                <li>
+                     <p style="width: 355px; margin-bottom: 0px; height: 110px; margin-left: 80px;">
+                        <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/Image/Logo.PNG" OnClick="ImageButton1_Click"/>
+                     </p>
+                </li>
+                <li style="text-align: left;">                 
+                    <p style="text-align: justify">
+                        &nbsp;</p>
+                </li>
+
+                <li class="middle" style="padding-top: -15px; margin-top: -15px; margin-left:-15px; padding-left: -15px;">
+                    
+                    <ul>
+                        
+                        <li ><a href="DangNhap.aspx">
+                            <asp:Label ID="Label1" runat="server" Text="Đăng nhập"></asp:Label></a>
+                            <a href="TShirt.aspx">
+                                
+                                <asp:Button   ID="Button1" Font-Bold runat="server" Text="Đăng xuất" OnClick="Button1_Click" BackColor="#CCCCCC" ForeColor="#000" BorderColor="White" BorderStyle="None" Font-Names="Times New Roman" Font-Size="12pt"/></a>
+                                
+                        </li>
+                        <li><a href="DangKy.aspx">
+                            <asp:Label ID="Label2" runat="server" Text="Đăng ký"></asp:Label></a>
+                            <a href="TShirt.aspx">
+                                <asp:Button ID="Button2" Font-Bold runat="server" Text="Đặt hàng" OnClick="Button2_Click" BackColor="#CCCCCC" ForeColor="#000" BorderColor="White" BorderStyle="None" Font-Names="Times New Roman" Font-Size="12pt"/></a>
+                            
+                        </li>
+                        <li><a href="GioHang.aspx">
+                            <asp:Label ID="Label3" runat="server" Text="Giỏ hàng"></asp:Label></a></li>
+                    </ul>
+                   
+                    </li>
+                </ul>
+           
+        </div>
+        <div class="menu" style="padding-top: -15px; margin-top: -15px; margin-bottom:-15px">
+             <ul>
+                 <li ><a href="TShirt.aspx">T-SHIRTS & POLOS</a></li>
+                 <li><a href="Hoodies.aspx">HOODIES</a></li>
+                 <li><a href="Backpacks.aspx">BACKPACKS</a></li>
+                 <li><a href="Accessories.aspx">ACCESSORIES</a></li>
+                 <li><a href="PantsShorts.aspx">PANTS & SHORTS</a></li>
+                 <li><a href="Jackets.aspx">JACKETS</a></li>
+             </ul>
+        </div>
+
+        <div style="height: 612px; width: 1370px">
+
+            <div style="display: block; list-style-type: none; height: 605px; width: 85%; margin-left: 100px ; text-align: center; vertical-align: middle;">
+                        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                        
+                        </asp:ContentPlaceHolder>
+                <div>
+                    <hr />
+                    <table>
+                        <tr align="center">
+            <td colspan="3" align="left" style="width:450px">
+                <h2>Hệ Thống Cửa Hàng</h2>
+                <p style="font-size:xx-large">
+                        <p style="font-weight:bold">Chi Nhánh Hồ Chí Minh</p>
+                        17 Bắc Hải, Phường 15, Quận 10, TP.Hồ Chí Minh<br />
+                        7 Huỳnh Khương Ninh, Phường Đakao, Quận 1, TP. Hồ Chí Minh<br />
+                        132 Nguyễn Sơn, Phường Phú Thọ Hòa, Quận Tân Phú, TP.Hồ Chí Minh<br />
+                        41 Quang Trung, Phường 10, Quận Gò Vấp, TP.Hồ Chí Minh<br />
+                        26 Lý Tự Trọng, Phường Bến Nghé, Quận 1, TP.Hồ Chí Minh<br />
+                        Central Market Lê Lai (Số 4 Phạm Ngũ Lão), Phường Phạm Ngũ Lão, Quận 1, TP.Hồ Chí Minh<br />
+                        <p style="font-weight:bold">Chi Nhánh Biên Hòa:</p>
+                        235 Phan Trung, Phường Tân Tiến, TP. Biên Hòa, Đồng Nai<br />
+                        <p style="font-weight:bold">Chi Nhánh Hà Nội:</p>
+                        49-51 Hồ Đắc Di, Nam Đồng, Đống Đa, Hà Nội.<br />
+                        121 Phố Huế, Hai Bà Trưng, Hà Nội<br />
+                        Tầng 7 Vincom Bà Triệu, Hai Bà Trưng, Hà Nội<br />
+                        28 Khúc Thừa Dụ, Dịch Vọng, Cầu Giấy<br />
+                        <b style="font-weight:bold">SĐT: </b>0933 800 190 - 1900252557<br />
+                        <b style="font-weight:bold">Email: </b>Dirtycoinsxinchao@gmail.com<br />
+                                        </p>
+                                    </td>
+                                    <td style="width:50px"></td>
+                                    <td style="width:300px">
+                                        <h2>Fanpage</h2>
+                                        <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v8.0" nonce="zaYLvobE"></script>
+                                        <div class="fb-page" data-href="https://www.facebook.com/DirtyCoins.VN/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Lqt2kk" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Lqt2k">Facebook</a></blockquote></div>
+                                    </td>
+                                    <td style="width:50px"></td>
+                                    <td>
+                                        <h2>Bản Đồ</h2>
+                                        
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d582.5729781264401!2d106.6289834609795!3d10.806086212429294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752be27d8b4f4d%3A0x92dcba2950430867!2zVHLGsOG7nW5nIMSQYcyjaSBob8yjYyBDw7RuZyBuZ2hp4buHcCBUaOG7sWMgcGjhuqltIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaA!5e0!3m2!1svi!2s!4v1596268401805!5m2!1svi!2s" width="360" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                    </td>
+        </tr>
+
+                    </table>
+                    
+                </div>
+                <div id = "Footer">Copyright © 2020 Dirty Coins Studio. Powered by Win</div>
+               </div>
+            
+        </div>
+    </form>
+</body>
+</html>
